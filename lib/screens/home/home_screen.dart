@@ -9,14 +9,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
-        child: ListView(
-          shrinkWrap: true,
-          children: const [
-            Body(),
-          ],
-        ),
+      body: ListView(
+        shrinkWrap: true,
+        children: const [
+          Body(),
+        ],
       ),
       drawer: const AppDrawer(),
     );
