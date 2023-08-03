@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:logsheet_turbin/screens/page/card_page.dart';
+import 'package:logsheet_turbin/screens/page/grafik.dart';
 import 'package:logsheet_turbin/screens/profile/dashboard.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -26,14 +28,24 @@ class AppDrawer extends StatelessWidget {
             leading: const Icon(Icons.home),
             title: const Text('Dashboard'),
             onTap: () {
-              MaterialPageRoute(builder: ((context) => const DashboardScreen()));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailGrafik(),
+                ),
+              );
             },
           ),
           ListTile(
             leading: const Icon(Icons.file_copy),
             title: const Text('Logsheet Turbin'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CardPage(),
+                ),
+              );
             },
           ),
           const SizedBox(

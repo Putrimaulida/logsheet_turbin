@@ -9,7 +9,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: SingleChildScrollView(
+      body: Padding(
+        padding: const EdgeInsets.only(bottom: 10),
         child: ListView(
           shrinkWrap: true,
           children: const [
@@ -23,7 +24,7 @@ class HomeScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
-      title: const Text('Logsheet Turbin'),
+      title: const Text('Industri Gula Glenmore'),
       titleTextStyle: const TextStyle(
         fontSize: 18,
         color: Colors.black,

@@ -23,7 +23,6 @@ class Body extends StatelessWidget {
   }
 }
 
-
 class BundelCard1 extends StatelessWidget {
   const BundelCard1({super.key});
 
@@ -45,7 +44,8 @@ class BundelCard1 extends StatelessWidget {
           child: Card(
             elevation: 0,
             color: Colors.transparent,
-            child: ClipRRect( // Use ClipRRect to make the background circular
+            child: ClipRRect(
+              // Use ClipRRect to make the background circular
               borderRadius: BorderRadius.circular(16.0),
               child: Container(
                 decoration: const BoxDecoration(
@@ -108,7 +108,8 @@ class BundelCard2 extends StatelessWidget {
           child: Card(
             elevation: 0,
             color: Colors.transparent,
-            child: ClipRRect( // Use ClipRRect to make the background circular
+            child: ClipRRect(
+              // Use ClipRRect to make the background circular
               borderRadius: BorderRadius.circular(16.0),
               child: Container(
                 decoration: const BoxDecoration(
@@ -134,7 +135,8 @@ class BundelCard2 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Image(
-                        image: AssetImage('assets/images/energy-consumption.png'),
+                        image:
+                            AssetImage('assets/images/energy-consumption.png'),
                         height: 115, // Set the height of the image as needed
                         width: 115, // Set the width of the image as needed
                       ),
@@ -171,7 +173,8 @@ class BundelCard3 extends StatelessWidget {
           child: Card(
             elevation: 0,
             color: Colors.transparent,
-            child: ClipRRect( // Use ClipRRect to make the background circular
+            child: ClipRRect(
+              // Use ClipRRect to make the background circular
               borderRadius: BorderRadius.circular(16.0),
               child: Container(
                 decoration: const BoxDecoration(
@@ -197,7 +200,8 @@ class BundelCard3 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Image(
-                        image: AssetImage('assets/images/electric-generator.png'),
+                        image:
+                            AssetImage('assets/images/electric-generator.png'),
                         height: 110, // Set the height of the image as needed
                         width: 110, // Set the width of the image as needed
                       ),
@@ -219,17 +223,15 @@ class BundelCard4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-          constraints: const BoxConstraints(
-            minHeight: 200,
-            minWidth: 400,
-          ),
-          child: const Card(
-            color: Colors.white,
-          ),
+      child: Container(
+        constraints: const BoxConstraints(
+          minHeight: 200,
+          minWidth: 400,
         ),
-      );
-    
+        child: const Card(
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }
-

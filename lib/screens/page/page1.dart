@@ -1,39 +1,26 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 
 class DetailPage1 extends StatefulWidget {
   const DetailPage1({super.key});
 
   @override
-  State<DetailPage1> createState() => _DetailPage1();
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: buildAppBar(),
-    );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-      title: const Text('PAGE 1'),
-      titleTextStyle: const TextStyle(
-        fontSize: 18,
-        color: Colors.black,
-      ),
-      iconTheme: const IconThemeData(
-        color: Colors.black,
-      ),
-    );
-  }
+  State<DetailPage1> createState() => _DetailPage1State();
 }
 
-class _DetailPage1 extends State<DetailPage1> {
-  
+class _DetailPage1State extends State<DetailPage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-      
+      appBar: AppBar(
+        title: const Text('PAGE 1'),
+        titleTextStyle: const TextStyle(
+          fontSize: 18,
+          color: Colors.black,
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
@@ -53,12 +40,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Inleat Steam (\u2103)", 
+                    "Inleat Steam (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -66,7 +53,6 @@ class _DetailPage1 extends State<DetailPage1> {
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 241, 238, 241),
                   borderRadius: BorderRadius.circular(10.0),
-                  
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -91,16 +77,16 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Exm. Steam (\u2103)", 
+                    "Exm. Steam (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-              Container(     
+              Container(
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 241, 238, 241),
                   borderRadius: BorderRadius.circular(10),
@@ -129,12 +115,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Thrust Bearing (\u2103)", 
+                    "Turbin Thrust Bearing (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -148,11 +134,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -167,12 +153,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Bearing / Gov Side (\u2103)", 
+                    "Turbin Bearing / Gov Side (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -186,11 +172,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -205,12 +191,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Bearing / Coup. Side (\u2103)", 
+                    "Turbin Bearing / Coup. Side (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -224,11 +210,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -243,12 +229,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Pinion Bearing / Tbn. Side (\u2103)", 
+                    "Pinion Bearing / Tbn. Side (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -262,11 +248,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -281,12 +267,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Pinion Bearing / Gen Side (\u2103)", 
+                    "Pinion Bearing / Gen Side (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -300,11 +286,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -319,12 +305,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Wheel Bearing / Thn. Side (\u2103)", 
+                    "Wheel Bearing / Thn. Side (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -338,11 +324,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -357,12 +343,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Wheel Bearing / Gen Side (\u2103)", 
+                    "Wheel Bearing / Gen Side (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -376,11 +362,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -395,12 +381,12 @@ class _DetailPage1 extends State<DetailPage1> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Oil Cooler Lub. Oil Outlet (\u2103)", 
+                    "Oil Cooler Lub. Oil Outlet (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -414,11 +400,11 @@ class _DetailPage1 extends State<DetailPage1> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -449,9 +435,8 @@ class _DetailPage1 extends State<DetailPage1> {
               const SizedBox(height: 20),
             ],
           ),
-        ),           
+        ),
       ),
-    ); 
+    );
   }
 }
-

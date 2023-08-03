@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:logsheet_turbin/screens/page/grafik.dart';
 
-
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
 

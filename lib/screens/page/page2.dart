@@ -10,12 +10,19 @@ class DetailPage2 extends StatefulWidget {
 }
 
 class _DetailPage2 extends State<DetailPage2> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-      
+      appBar: AppBar(
+        title: const Text('PAGE 2'),
+        titleTextStyle: const TextStyle(
+          fontSize: 18,
+          color: Colors.black,
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
@@ -35,12 +42,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Speed (RPM)", 
+                    "Turbin Speed (RPM)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -48,7 +55,6 @@ class _DetailPage2 extends State<DetailPage2> {
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 241, 238, 241),
                   borderRadius: BorderRadius.circular(10.0),
-                  
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -73,16 +79,16 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Rotor Vibration Monitor (mm)", 
+                    "Rotor Vibration Monitor (mm)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-              Container(     
+              Container(
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 241, 238, 241),
                   borderRadius: BorderRadius.circular(10),
@@ -111,12 +117,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Axial Displace Ment Monitor (mm)", 
+                    "Axial Displace Ment Monitor (mm)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -130,11 +136,11 @@ class _DetailPage2 extends State<DetailPage2> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -149,12 +155,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Main Steam (Kg/Cm\u00B2G)", 
+                    "Main Steam (Kg/Cm\u00B2G)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -168,11 +174,11 @@ class _DetailPage2 extends State<DetailPage2> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -187,12 +193,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "1ST Stage Steam (Kg/Cm\u00B2G)", 
+                    "1ST Stage Steam (Kg/Cm\u00B2G)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -206,11 +212,11 @@ class _DetailPage2 extends State<DetailPage2> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -225,12 +231,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Exhaust (Kg/Cm\u00B2G)", 
+                    "Exhaust (Kg/Cm\u00B2G)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -244,11 +250,11 @@ class _DetailPage2 extends State<DetailPage2> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -263,12 +269,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Lub Oil (Kg/Cm\u00B2G)", 
+                    "Lub Oil (Kg/Cm\u00B2G)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -282,11 +288,11 @@ class _DetailPage2 extends State<DetailPage2> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -301,12 +307,12 @@ class _DetailPage2 extends State<DetailPage2> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Control Oil (Kg/Cm\u00B2G)", 
+                    "Control Oil (Kg/Cm\u00B2G)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -320,11 +326,11 @@ class _DetailPage2 extends State<DetailPage2> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -356,9 +362,8 @@ class _DetailPage2 extends State<DetailPage2> {
               const SizedBox(height: 20),
             ],
           ),
-        ),           
+        ),
       ),
-    ); 
+    );
   }
 }
-

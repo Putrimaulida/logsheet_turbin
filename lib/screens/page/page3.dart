@@ -10,12 +10,19 @@ class DetailPage3 extends StatefulWidget {
 }
 
 class _DetailPage3 extends State<DetailPage3> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-      
+      appBar: AppBar(
+        title: const Text('PAGE 3'),
+        titleTextStyle: const TextStyle(
+          fontSize: 18,
+          color: Colors.black,
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
@@ -36,12 +43,12 @@ class _DetailPage3 extends State<DetailPage3> {
                   padding: EdgeInsets.all(8.0),
                   child: Text(
                     //"TWIN OIL COOOLER"
-                    "Temp Water In (\u2103)", 
+                    "Temp Water In (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -49,7 +56,6 @@ class _DetailPage3 extends State<DetailPage3> {
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 241, 238, 241),
                   borderRadius: BorderRadius.circular(10.0),
-                  
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
@@ -74,16 +80,16 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Temp Water Out (\u2103)", 
+                    "Temp Water Out (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-              Container(     
+              Container(
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 241, 238, 241),
                   borderRadius: BorderRadius.circular(10),
@@ -112,12 +118,12 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Temp Oil In (\u2103)", 
+                    "Temp Oil In (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -131,11 +137,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -150,12 +156,12 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Temp Oil Out (\u2103)", 
+                    "Temp Oil Out (\u2103)",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -169,11 +175,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -188,12 +194,12 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Vacum", 
+                    "Vacum",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -207,11 +213,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -226,12 +232,12 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Injector", 
+                    "Injector",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -245,11 +251,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -265,12 +271,12 @@ class _DetailPage3 extends State<DetailPage3> {
                   padding: EdgeInsets.all(8.0),
                   child: Text(
                     //"GOVERNOR"
-                    "Speed Drop", 
+                    "Speed Drop",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -284,11 +290,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -303,12 +309,12 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Load Limit", 
+                    "Load Limit",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -322,11 +328,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -342,12 +348,12 @@ class _DetailPage3 extends State<DetailPage3> {
                   padding: EdgeInsets.all(8.0),
                   child: Text(
                     //"FILTER LOB OIL"
-                    "In", 
+                    "In",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -361,11 +367,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -380,12 +386,12 @@ class _DetailPage3 extends State<DetailPage3> {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Out", 
+                    "Out",
                     style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    ), 
+                      color: Colors.black,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -399,11 +405,11 @@ class _DetailPage3 extends State<DetailPage3> {
                     vertical: 0,
                     horizontal: 15,
                   ),
-                  child: TextFormField(                    
+                  child: TextFormField(
                     decoration: const InputDecoration(
                       border: InputBorder.none,
                       isDense: true,
-                      contentPadding: EdgeInsets.symmetric(vertical: 15),                      
+                      contentPadding: EdgeInsets.symmetric(vertical: 15),
                     ),
                   ),
                 ),
@@ -434,9 +440,8 @@ class _DetailPage3 extends State<DetailPage3> {
               const SizedBox(height: 20),
             ],
           ),
-        ),           
+        ),
       ),
-    ); 
+    );
   }
 }
-

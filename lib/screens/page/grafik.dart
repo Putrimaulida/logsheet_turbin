@@ -8,7 +8,14 @@ class DetailGrafik extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Halaman Detail'), // Judul AppBar di halaman tujuan
+        title: const Text('Dashboard'),
+        titleTextStyle: const TextStyle(
+          fontSize: 18,
+          color: Colors.black,
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.black,
+        ),
       ),
       body: Center(
         child: Text('Ini adalah halaman detail'), // Konten halaman tujuan
@@ -16,4 +23,3 @@ class DetailGrafik extends StatelessWidget {
     );
   }
 }
-
