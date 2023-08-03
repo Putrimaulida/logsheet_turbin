@@ -2,32 +2,14 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-class DetailPage1 extends StatefulWidget {
-  const DetailPage1({super.key});
+class DetailPage3 extends StatefulWidget {
+  const DetailPage3({super.key});
 
   @override
-  State<DetailPage1> createState() => _DetailPage1();
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: buildAppBar(),
-    );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-      title: const Text('PAGE 1'),
-      titleTextStyle: const TextStyle(
-        fontSize: 18,
-        color: Colors.black,
-      ),
-      iconTheme: const IconThemeData(
-        color: Colors.black,
-      ),
-    );
-  }
+  State<DetailPage3> createState() => _DetailPage3();
 }
 
-class _DetailPage1 extends State<DetailPage1> {
+class _DetailPage3 extends State<DetailPage3> {
   
   @override
   Widget build(BuildContext context) {
@@ -47,13 +29,14 @@ class _DetailPage1 extends State<DetailPage1> {
                 width: 25,
               ),
 
-              // Inleat Steam
+              // Temp Water In
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Inleat Steam (\u2103)", 
+                    //"TWIN OIL COOOLER"
+                    "Temp Water In (\u2103)", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -85,13 +68,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Exm. Steam
+              // Temp Water Out
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Exm. Steam (\u2103)", 
+                    "Temp Water Out (\u2103)", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -123,13 +106,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Turbin Thrust Bearing
+              // Temp Oil In
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Thrust Bearing (\u2103)", 
+                    "Temp Oil In (\u2103)", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -161,13 +144,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Turbin Bearing (Gov Side)
+              // Temp Oil Out
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Bearing / Gov Side (\u2103)", 
+                    "Temp Oil Out (\u2103)", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -199,13 +182,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Turbin Bearing (Coup. Side)
+              // Vacum
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Turbin Bearing / Coup. Side (\u2103)", 
+                    "Vacum", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -237,13 +220,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Pinion Bearing (Tbn. Side)
+              // Injector
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Pinion Bearing / Tbn. Side (\u2103)", 
+                    "Injector", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -275,13 +258,14 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Pinion Bearing (Gen Side)
+              // Speed Drop
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Pinion Bearing / Gen Side (\u2103)", 
+                    //"GOVERNOR"
+                    "Speed Drop", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -313,13 +297,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Wheel Bearing (Thn. Side)
+              // Load Limit
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Wheel Bearing / Thn. Side (\u2103)", 
+                    "Load Limit", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -351,13 +335,14 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Wheel Bearing (Gen Side)
+              // In
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Wheel Bearing / Gen Side (\u2103)", 
+                    //"FILTER LOB OIL"
+                    "In", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,
@@ -389,13 +374,13 @@ class _DetailPage1 extends State<DetailPage1> {
                 height: 20,
               ),
 
-              // Oil Cooler Lub. Oil Outlet
+              // Out
               const Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(
-                    "Oil Cooler Lub. Oil Outlet (\u2103)", 
+                    "Out", 
                     style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,

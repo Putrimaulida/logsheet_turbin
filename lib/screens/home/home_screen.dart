@@ -1,8 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:logsheet_turbin/screens/home/components/body.dart';
+import 'package:logsheet_turbin/screens/profile/sidebar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key});
@@ -11,7 +9,15 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: const Body(),
+      body: SingleChildScrollView(
+        child: ListView(
+          shrinkWrap: true,
+          children: const [
+            Body(),
+          ],
+        ),
+      ),
+      drawer: const AppDrawer(),
     );
   }
 
@@ -22,14 +28,8 @@ class HomeScreen extends StatelessWidget {
         fontSize: 18,
         color: Colors.black,
       ),
-      leading: Row(
-        children: [
-          IconButton(
-            icon: SvgPicture.asset("assets/icons/menu.svg"),
-            onPressed: () {
-            },
-          ),
-        ],
+      iconTheme: const IconThemeData(
+        color: Colors.black,
       ),
     );
   }

@@ -1,26 +1,24 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:logsheet_turbin/screens/login_screen.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
-
 
   @override
   _OnboardingScreenState createState() => _OnboardingScreenState();
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-
   @override
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(seconds: 3)).then((value){
+    // Delay waktu selama 2 detik sebelum berpindah ke halaman selanjutnya
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (ctx) => const LoginScreen()));
-    }); 
+    });
   }
 
   @override
@@ -29,12 +27,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       body: SizedBox(
         width: double.infinity,
         child: Column(
-          
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const[
+          children: const [
             SizedBox(
-                height: 90,
-                width: 25,
+              height: 90,
+              width: 25,
             ),
             Image(
               image: AssetImage("assets/images/logo.png"),
